@@ -143,13 +143,13 @@ export const ContactPage: React.FC = () => {
       />
 
       <PageHero
-        eyebrow="Contact Versata"
         title="Let's Start the Right Conversation"
         description="Whether you have a specific technology requirement, a developing project, or you are an international manufacturer exploring the Nigerian market, Versata welcomes the opportunity to connect."
         ctaText="Send an Enquiry"
         ctaLink="#contact-form"
         secondaryCtaText="Explore Partnerships"
         secondaryCtaLink="/partnerships"
+        backgroundImage="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2400&q=85"
       />
 
       <section id="contact-form" ref={formSectionRef} aria-labelledby="contact-form-heading" className="border-y border-slate-200 bg-white">

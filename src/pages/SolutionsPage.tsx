@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { ArrowDown, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 
 import { PageHero } from '@/components/PageHero'
@@ -11,7 +11,6 @@ import heroSolutionsImg from '@/assets/hero_solutions.jpg'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const categories = ['Smart Energy & Energy Management', 'Digital Infrastructure & Technology Solutions', 'Education Technology & Smart Learning', 'Smart Collaboration & Workplace Technology']
 const principles = [
   ['01', 'Requirement-Led', 'Start with the customer’s actual business, institutional or infrastructure need.'],
   ['02', 'Technology-Relevant', 'Identify technologies and products that are appropriate to the requirement.'],

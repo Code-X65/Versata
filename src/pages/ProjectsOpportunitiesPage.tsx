@@ -3,18 +3,11 @@ import { Link } from 'react-router-dom'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { ArrowDown, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 import { PageHero } from '@/components/PageHero'
 
 gsap.registerPlugin(ScrollTrigger)
-
-const opportunityStages = [
-  ['Technology', 'Innovative products & solutions'],
-  ['Market Requirement', 'Customer, institutional & project needs'],
-  ['Project', 'Practical opportunity development'],
-  ['Opportunity', 'Potential market relevance'],
-] as const
 
 const opportunityAreas = [
   ['01', 'Smart Energy', 'Opportunities involving energy monitoring, management and smarter energy infrastructure.'],
@@ -180,13 +173,13 @@ export const ProjectsOpportunitiesPage: React.FC = () => {
       />
 
       <PageHero
-        eyebrow="Projects & Opportunities"
         title="Developing Technology Opportunities Around Real Market Requirements"
         description="Versata identifies practical applications for innovative technologies and develops opportunities around real customer, institutional and project requirements within the Nigerian market."
         ctaText="Explore Opportunities"
         ctaLink="#opportunities-overview"
         secondaryCtaText="Discuss a Project"
         secondaryCtaLink="/contact"
+        backgroundImage="https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=2400&q=85"
       />
 
       <section id="opportunities-overview" ref={overviewRef} aria-labelledby="opportunities-begin-heading" className="border-y border-slate-200 bg-white">

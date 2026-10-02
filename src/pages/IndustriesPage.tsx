@@ -3,22 +3,11 @@ import { Link } from 'react-router-dom'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { ArrowDown, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 import { PageHero } from '@/components/PageHero'
 
 gsap.registerPlugin(ScrollTrigger)
-
-const industries = [
-  'Corporate & Commercial',
-  'Education',
-  'Energy',
-  'Manufacturing & Industrial',
-  'Hospitality',
-  'Healthcare',
-  'Government & Public Sector',
-  'Real Estate & Infrastructure',
-]
 
 const industryApproachPrinciples = [
   ['01', 'Understand the Environment', 'Understand the organisation, sector and specific requirement before considering technology.'],
@@ -386,13 +375,13 @@ export const IndustriesPage: React.FC = () => {
       />
 
       <PageHero
-        eyebrow="Industries We Serve"
         title="Technology Opportunities Across Diverse Sectors"
         description="Versata explores technology opportunities across sectors where innovative products and solutions can support business, institutional, infrastructure and operational requirements. Each opportunity begins with understanding specific sector needs."
         ctaText="Explore Sectors"
         ctaLink="#industry-overview"
         secondaryCtaText="Discuss Requirements"
         secondaryCtaLink="/contact"
+        backgroundImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2400&q=85"
       />
 
       <section ref={overviewRef} aria-labelledby="industry-approach-heading" className="border-y border-slate-200 bg-white">
@@ -847,7 +836,7 @@ export const IndustriesPage: React.FC = () => {
             className="group mt-8 inline-flex min-h-11 items-center gap-2 rounded-sm bg-[#084d3c] px-5 py-3 text-xs font-bold text-white transition-all duration-200 hover:bg-[#063b2e] active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00AFA9] focus-visible:ring-offset-2"
           >
             Explore Our Solutions
-            <ArrowDown className="h-3.5 w-3.5 -rotate-90 transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true" />
+            <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true" />
           </Link>
         </div>
       </section>

@@ -2,11 +2,9 @@ import React, { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { ArrowDown, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { SEO } from '@/components/SEO'
-import partnershipEmblem from '@/assets/Glossy Teal Ribbon Growth Emblem.png'
-
 import { PageHero } from '@/components/PageHero'
 import heroAboutImg from '@/assets/hero_about.jpg'
 
