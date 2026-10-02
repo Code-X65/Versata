@@ -46,7 +46,7 @@ const storyMilestones = [
     description: 'Versata begins operating with a focus on identifying technology opportunities and supporting organisations in Nigeria.',
   },
   {
-    marker: 'Evolution',
+    marker: '2023',
     title: 'Developing the Model',
     description: 'The business develops around technology opportunity identification, business development, technology sourcing and practical technology solutions.',
   },

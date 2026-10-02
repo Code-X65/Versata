@@ -36,27 +36,42 @@ const partnershipPrinciples = [
 const partnershipStages = [
   {
     number: '01',
-    title: 'Market Development',
-    lead: 'Identify the opportunity.',
-    description: 'Identify potential market opportunities and suitable customer segments.',
+    title: 'Phase 1 — Market Development & Project Partner',
+    lead: 'Initial cooperation focused on:',
+    activities: [
+      'Market research',
+      'Product introduction',
+      'Customer identification',
+      'Project opportunities',
+      'Product presentations',
+      'Commercial discussions',
+    ],
   },
   {
     number: '02',
-    title: 'Business Development',
-    lead: 'Engage the market.',
-    description: 'Engage potential customers and develop genuine commercial opportunities.',
+    title: 'Phase 2 — Authorised Reseller / Integration Partner',
+    lead: 'Subject to mutual agreement:',
+    activities: [
+      'Reselling',
+      'Product integration',
+      'Technical training',
+      'Customer support',
+      'Demonstration activities',
+      'Local project development',
+    ],
   },
   {
     number: '03',
-    title: 'Project Development',
-    lead: 'Develop the solution.',
-    description: 'Work with manufacturers and technical partners to develop solutions around identified customer requirements.',
-  },
-  {
-    number: '04',
-    title: 'Market Expansion',
-    lead: 'Build the relationship further.',
-    description: 'Successful partnerships can progress toward authorised reseller, integration or distribution relationships.',
+    title: 'Phase 3 — Distribution & Market Expansion',
+    lead: 'For suitable products and established relationships:',
+    activities: [
+      'Territory development',
+      'Distribution',
+      'Channel development',
+      'Dealer/reseller networks',
+      'Regional market expansion',
+      'Long-term commercial cooperation',
+    ],
   },
 ]
 
@@ -468,7 +483,14 @@ export const TechnologyPartnersPage: React.FC = () => {
                       <div className="pb-1 sm:pb-2">
                         <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#35D0C5]">{stage.title}</p>
                         <h3 className="mt-3 text-2xl font-bold leading-tight tracking-[-0.03em] sm:text-3xl">{stage.lead}</h3>
-                        <p className="mt-3 max-w-xl text-xs leading-5 text-slate-300 sm:text-[13px] sm:leading-6">{stage.description}</p>
+                        <ul className="mt-3 grid max-w-xl gap-1 text-xs leading-5 text-slate-300 sm:grid-cols-2 sm:text-[13px] sm:leading-6">
+                          {stage.activities.map((activity) => (
+                            <li key={activity} className="flex gap-2">
+                              <span aria-hidden="true" className="text-[#35D0C5]">•</span>
+                              <span>{activity}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </li>
                   ))}

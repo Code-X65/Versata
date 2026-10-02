@@ -18,7 +18,7 @@ const industryApproachPrinciples = [
 
 const corporateTechnologyAreas = [
   ['01', 'Digital Infrastructure', 'Technology supporting modern business and organisational infrastructure requirements.'],
-  ['02', 'Smart Workplace Technology', 'Technology supporting modern workplace environments and operational needs.'],
+  ['02', 'Smart Workplace Technology', 'Technology supporting modern Agricultural systems and operational needs.'],
   ['03', 'Collaboration & Communication', 'Solutions involving smart meeting environments, digital collaboration, wireless presentation and video conferencing.'],
   ['04', 'Energy Management', 'Energy monitoring, smart metering and energy-management technologies where relevant to the organisation\'s requirements.'],
 ] as const
