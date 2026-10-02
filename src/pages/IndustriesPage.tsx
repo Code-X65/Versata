@@ -381,7 +381,8 @@ export const IndustriesPage: React.FC = () => {
         ctaLink="#industry-overview"
         secondaryCtaText="Discuss Requirements"
         secondaryCtaLink="/contact"
-        backgroundImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2400&q=85"
+        backgroundImage="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=2400&q=85"
+        imageAlt="Smart power grid transmission towers and clean industrial infrastructure"
       />
 
       <section ref={overviewRef} aria-labelledby="industry-approach-heading" className="border-y border-slate-200 bg-white">

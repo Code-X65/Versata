@@ -72,7 +72,8 @@ export const PartnershipsPage: React.FC = () => {
       ctaLink="/contact"
       secondaryCtaText="Explore Partnership Model"
       secondaryCtaLink="#partnership-model"
-      backgroundImage="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2400&q=85"
+      backgroundImage="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=2400&q=85"
+      imageAlt="Global technology engineering and manufacturing partnership"
     />
 
     <section data-partnership-section className="border-y border-slate-200 bg-white" aria-labelledby="what-versata-brings"><div className="mx-auto max-w-7xl px-6 py-16 sm:px-10 sm:py-20 lg:px-12 lg:py-24"><div className="grid gap-10 lg:grid-cols-12 lg:gap-16"><div className="lg:col-span-5"><p data-partnership-intro className="text-[11px] font-bold uppercase tracking-[.2em] text-[#00AFA9]">What Versata Brings</p><h2 id="what-versata-brings" data-partnership-intro className="mt-4 text-4xl font-bold leading-[1.06] tracking-[-.04em] sm:text-5xl">Local Market Development Built Around Real Opportunities</h2><p data-partnership-intro className="mt-6 max-w-md text-sm leading-6 text-slate-600 sm:text-[15px] sm:leading-7">Versata’s role is to help selected international manufacturers understand and develop Nigerian market opportunities through local engagement, project identification, customer development and market intelligence.</p></div><ol className="border-t border-slate-200 lg:col-span-7">{valueAreas.map(([number,title,copy]) => <li key={number} data-partnership-item className="grid gap-3 border-b border-slate-200 py-5 sm:grid-cols-[3rem_1fr_1.25fr] sm:gap-5"><span className="text-xs font-bold tracking-[.14em] text-[#1557B0]">{number}</span><h3 className="text-lg font-bold tracking-[-.025em] sm:text-xl">{title}</h3><p className="text-xs leading-5 text-slate-600 sm:text-[13px] sm:leading-6">{copy}</p></li>)}</ol></div></div></section>

@@ -149,7 +149,8 @@ export const ContactPage: React.FC = () => {
         ctaLink="#contact-form"
         secondaryCtaText="Explore Partnerships"
         secondaryCtaLink="/partnerships"
-        backgroundImage="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2400&q=85"
+        backgroundImage="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=2400&q=85"
+        imageAlt="Modern technology operations and client consultation centre"
       />
 
       <section id="contact-form" ref={formSectionRef} aria-labelledby="contact-form-heading" className="border-y border-slate-200 bg-white">

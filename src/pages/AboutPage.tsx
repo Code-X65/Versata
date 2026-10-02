@@ -6,7 +6,6 @@ import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { SEO } from '@/components/SEO'
 import { PageHero } from '@/components/PageHero'
-import heroAboutImg from '@/assets/hero_about.jpg'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -287,7 +286,8 @@ export const AboutPage: React.FC = () => {
         ctaLink="#company-overview"
         secondaryCtaText="Get In Touch"
         secondaryCtaLink="/contact"
-        backgroundImage={heroAboutImg}
+        backgroundImage="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=2400&q=85"
+        imageAlt="Field engineers and technical specialists conducting equipment inspection"
       />
 
       {/* Company Snapshot Grid Bar */}

@@ -179,7 +179,8 @@ export const ProjectsOpportunitiesPage: React.FC = () => {
         ctaLink="#opportunities-overview"
         secondaryCtaText="Discuss a Project"
         secondaryCtaLink="/contact"
-        backgroundImage="https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=2400&q=85"
+        backgroundImage="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=2400&q=85"
+        imageAlt="Renewable energy solar installation and smart utility infrastructure"
       />
 
       <section id="opportunities-overview" ref={overviewRef} aria-labelledby="opportunities-begin-heading" className="border-y border-slate-200 bg-white">

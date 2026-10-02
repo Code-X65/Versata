@@ -47,26 +47,26 @@ export const HomePage: React.FC = () => {
   const solutions = [
     {
       number: '01',
-      title: 'Smart Energy & Energy Management',
-      description: 'Solutions that help organisations monitor, understand and better manage energy infrastructure.',
+      title: 'Market Development',
+      description: 'Identify relevant market segments, customer requirements and project opportunities for suitable technologies.',
       featured: true,
     },
     {
       number: '02',
-      title: 'Digital Infrastructure & Technology Solutions',
-      description: 'Technology solutions supporting productivity, efficiency and modern infrastructure.',
+      title: 'Infrastructure Deployment',
+      description: 'Coordinate the introduction and deployment of appropriate technology within commercial, industrial, institutional and infrastructure environments.',
       featured: false,
     },
     {
       number: '03',
-      title: 'Education Technology & Smart Learning',
-      description: 'Technology supporting smart learning, STEM, robotics, AI and technical skills development.',
+      title: 'Commissioning & Technical Coordination',
+      description: 'Coordinate manufacturers, technical partners and local stakeholders during installation, configuration, testing and project handover where appropriate.',
       featured: false,
     },
     {
       number: '04',
-      title: 'Smart Collaboration & Workplace Technology',
-      description: 'Technology designed to improve meetings, communication, collaboration and workplace productivity.',
+      title: 'After-Sales Support',
+      description: 'Support customers and manufacturers after deployment through local coordination, issue escalation, technical communication and ongoing relationship management.',
       featured: true,
     },
   ]
@@ -97,38 +97,23 @@ export const HomePage: React.FC = () => {
   const marketNeeds = [
     {
       number: '01',
-      title: 'Operational Efficiency',
-      description: 'Technology that helps organisations improve processes and operate more effectively.',
+      title: 'Project Execution Coordination',
+      description: 'Coordinate relevant stakeholders, manufacturers and technical partners around approved project requirements.',
     },
     {
       number: '02',
-      title: 'Energy Management',
-      description: 'Solutions that support better monitoring, understanding and management of energy infrastructure.',
+      title: 'On-the-Ground Technical Coordination',
+      description: 'Provide a local point of coordination for meetings, site requirements, demonstrations, deployment activities and technical communication where applicable.',
     },
     {
       number: '03',
-      title: 'Infrastructure Modernisation',
-      description: 'Technologies supporting modern business, institutional and infrastructure environments.',
+      title: 'Commissioning Support',
+      description: 'Coordinate commissioning, testing and manufacturer or technical-partner involvement where required.',
     },
     {
       number: '04',
-      title: 'Education & Technical Training',
-      description: 'Technology supporting modern learning, STEM, robotics, AI, engineering and technical skills development.',
-    },
-    {
-      number: '05',
-      title: 'Digital Adoption',
-      description: 'Practical digital technologies that help organisations modernise how they operate and collaborate.',
-    },
-    {
-      number: '06',
-      title: 'Operational Challenges',
-      description: 'Appropriate technologies that can help organisations address specific operational and infrastructure requirements.',
-    },
-    {
-      number: '07',
-      title: 'Productivity',
-      description: 'Technology solutions that enable organisations to improve workplace and operational performance.',
+      title: 'After-Sales Support',
+      description: 'Support ongoing communication, issue escalation, customer relationships and local coordination after deployment.',
     },
   ]
 
@@ -472,8 +457,8 @@ export const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#F4F5F2] text-[#102A56]">
       <SEO
-        title="Versata Digital Solutions — Technology That Moves Businesses Forward"
-        description="Versata is a modern digital solutions organization focused on technology, innovation, and practical digital services."
+        title="Versata Digital Solutions | Technology Integration & Market Development"
+        description="Versata connects international technology with practical energy, infrastructure, industrial and institutional opportunities in Nigeria and West Africa."
       />
 
       {/* Main Hero Component */}
@@ -494,13 +479,13 @@ export const HomePage: React.FC = () => {
               id="about-versata-heading"
               className="mt-4 max-w-2xl text-4xl font-bold leading-[1.08] tracking-[-0.035em] text-[#102A56] sm:text-5xl lg:text-[56px]"
             >
-              Connecting Technology With Real Opportunities
+              Bridging Global Technology With Local African Market Requirements
             </h2>
             <p className="mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-[17px]">
-              Versata Digital Solutions is a Nigerian technology solutions and market-development company focused on connecting organisations with innovative technologies and practical solutions for real business, institutional and infrastructure needs.
+              Versata Digital Solutions is a Nigerian technology and market-development company working to connect relevant international technologies with practical local requirements.
             </p>
             <p className="mt-5 max-w-xl text-sm leading-6 text-slate-500 sm:text-[15px]">
-              We identify relevant technologies, understand local market requirements, connect organisations with suitable technology providers and manufacturers, and help develop practical technology opportunities.
+              We work across customer engagement, project development, technology sourcing, local coordination and market development to help international manufacturers and local organisations turn technology opportunities into practical projects.
             </p>
 
             <div className="mt-8 border-t border-slate-200">
@@ -576,17 +561,17 @@ export const HomePage: React.FC = () => {
           <div data-solutions-intro className="grid gap-6 border-b border-slate-200 pb-10 lg:grid-cols-12 lg:items-end lg:gap-12">
             <div className="lg:col-span-8">
               <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#00AFA9]">
-                Our Key Solutions
+                Capabilities
               </p>
               <h2
                 id="key-solutions-heading"
                 className="mt-4 max-w-3xl text-4xl font-bold leading-[1.08] tracking-[-0.035em] text-[#102A56] sm:text-5xl"
               >
-                Technology Solutions Built Around Real-World Needs
+                From Market Opportunity to Local Deployment
               </h2>
             </div>
             <p className="max-w-md text-sm leading-6 text-slate-500 sm:text-[15px] lg:col-span-4 lg:pb-1">
-              From smart energy and digital infrastructure to education technology and workplace collaboration, Versata connects organisations with practical technology solutions designed around their specific requirements.
+              Versata supports technology companies and organisations across the commercial and technical stages required to develop practical projects in Nigeria.
             </p>
           </div>
 
@@ -715,7 +700,7 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Why Nigeria / Market Opportunity */}
+      {/* Local execution capability */}
       <section
         ref={marketOpportunitySectionRef}
         aria-labelledby="market-opportunity-heading"
@@ -724,37 +709,36 @@ export const HomePage: React.FC = () => {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-16 sm:px-10 sm:py-20 lg:grid-cols-12 lg:gap-16 lg:px-12 lg:py-28 xl:gap-24">
           <div className="relative self-start lg:sticky lg:top-28 lg:col-span-5">
             <p data-market-eyebrow className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#00AFA9]">
-              Why Nigeria?
+              How We Support Projects
             </p>
             <h2
               id="market-opportunity-heading"
               className="mt-4 max-w-xl text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-[#102A56] sm:text-5xl lg:text-[54px]"
             >
-              <span data-market-heading-line className="block">A Growing Need</span>
-              <span data-market-heading-line className="block">for Practical</span>
-              <span data-market-heading-line className="block">Technology Solutions</span>
+              <span data-market-heading-line className="block">Local Support Beyond</span>
+              <span data-market-heading-line className="block">the Initial Sale</span>
             </h2>
             <p data-market-copy className="mt-6 max-w-lg text-sm leading-6 text-slate-600 sm:text-[15px] sm:leading-7">
-              Across business, education, energy, infrastructure and industry, organisations in Nigeria are increasingly looking for technologies that improve efficiency, modernise operations and address practical infrastructure needs.
+              Practical technology projects require more than an initial introduction. Versata supports local coordination between customers, manufacturers and suitable technical partners as opportunities develop.
             </p>
             <p className="mt-4 max-w-lg text-sm leading-6 text-slate-500 sm:text-[15px] sm:leading-7">
-              Versata connects these requirements with appropriate international technologies, manufacturers and solution providers.
+              Our role is to coordinate and support the pathway; specialist engineering and installation work may be undertaken through manufacturers and technical partners where appropriate.
             </p>
 
             <div data-market-graphic aria-hidden="true" className="relative mt-10 h-36 max-w-md overflow-hidden border-y border-slate-200 sm:h-40">
               <span className="absolute -left-1 top-1/2 -translate-y-1/2 text-[128px] font-bold leading-none tracking-[-0.12em] text-[#E8F0FC] sm:text-[146px]">NG</span>
               <span className="absolute inset-y-0 left-[29%] w-px bg-[#00AFA9]/35" />
               <span className="absolute inset-x-0 top-1/2 h-px bg-[#1557B0]/15" />
-              <span className="absolute bottom-5 right-0 text-[10px] font-bold uppercase tracking-[0.18em] text-[#1557B0]">Market Opportunity</span>
+              <span className="absolute bottom-5 right-0 text-[10px] font-bold uppercase tracking-[0.18em] text-[#1557B0]">Local Project Support</span>
             </div>
 
             <p data-market-statement className="mt-8 max-w-md border-l-2 border-[#00AFA9] pl-4 text-lg font-medium leading-snug tracking-[-0.02em] text-[#102A56] sm:text-xl">
-              Connecting local requirements with relevant global technology.
+              Local coordination that helps turn relevant technology into practical project activity.
             </p>
           </div>
 
           <div data-market-needs className="relative lg:col-span-7 lg:pt-1">
-            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400">Market Needs</p>
+            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400">Execution Capability</p>
             <div className="relative mt-5">
               <div data-market-progress aria-hidden="true" className="absolute bottom-6 left-[1.05rem] top-6 w-px origin-top bg-[#00AFA9]/60 sm:left-[1.25rem]" />
               <ol className="relative">

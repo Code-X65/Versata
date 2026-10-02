@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ArrowRight } from 'lucide-react'
-import defaultHeroBg from '@/assets/hero-meeting.png'
+import defaultHeroBg from '@/assets/hero_technology.jpg'
 
 export interface PageHeroProps {
   title: string
@@ -21,12 +21,12 @@ export interface PageHeroProps {
 export const PageHero: React.FC<PageHeroProps> = ({
   title,
   description,
-  ctaText = 'Start a Project',
+  ctaText = 'Discuss a Project',
   ctaLink = '/contact',
   secondaryCtaText,
   secondaryCtaLink,
   backgroundImage = defaultHeroBg,
-  imageAlt = 'Versata Digital Solutions',
+  imageAlt = 'Industrial technology and infrastructure environment',
   heightClass = 'h-screen',
   className = '',
 }) => {
@@ -141,4 +141,3 @@ export const PageHero: React.FC<PageHeroProps> = ({
     </section>
   )
 }
-

@@ -14,8 +14,7 @@ const navLinks = [
   { to: '/technology-partners', label: 'Technology Partners' },
   { to: '/industries', label: 'Industries' },
   { to: '/opportunities', label: 'Opportunities' },
-  { to: '/partnerships', label: 'Partnerships' },
-  { to: '/contact', label: 'Contact' },
+  { to: '/partnerships', label: 'Partnerships' }
 ]
 
 export const Navbar: React.FC = () => {
@@ -192,7 +191,7 @@ export const Navbar: React.FC = () => {
                 : 'bg-[#084d3c] text-white hover:bg-[#063b2e] hover:shadow-md'
             }`}
           >
-            Start a Project
+           Contact Us 
           </Link>
         </div>
 
