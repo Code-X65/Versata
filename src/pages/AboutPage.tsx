@@ -286,7 +286,7 @@ export const AboutPage: React.FC = () => {
         ctaLink="#company-overview"
         secondaryCtaText="Get In Touch"
         secondaryCtaLink="/contact"
-        backgroundImage="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=2400&q=85"
+        backgroundImage="https://i.pinimg.com/736x/3b/af/5f/3baf5f5e8ab2daa89ce758aed20fff05.jpg"
         imageAlt="Field engineers and technical specialists conducting equipment inspection"
       />
 

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import heroEnergyGridImg from '@/assets/hero_energy_grid.jpg'
+import { MessageCircle } from 'lucide-react'
+import { whatsappUrl } from '@/lib/contact'
 
 export const Hero: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null)
@@ -87,12 +89,15 @@ export const Hero: React.FC = () => {
                   </p>
 
                   <div className="hero-cta flex flex-wrap items-center gap-3 pt-1">
-                    <Link
-                      to="/solutions"
+                    <a
+                      href={whatsappUrl('Hello Versata, I would like to discuss a technology requirement or project opportunity.')}
+                      target="_blank"
+                      rel="noreferrer"
                       className="inline-flex items-center justify-center rounded-xs bg-[#084d3c] px-5 py-2.5 text-xs font-semibold text-white shadow-sm transition-all duration-200 hover:bg-[#063b2e] hover:shadow-md active:scale-98"
                     >
-                      Explore Our Solutions
-                    </Link>
+                      <MessageCircle className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
+                      Chat on WhatsApp
+                    </a>
                     <Link
                       to="/partnerships"
                       className="inline-flex items-center justify-center rounded-xs border border-white/35 bg-black/25 px-4 py-2.5 text-xs font-semibold text-white backdrop-blur-xs transition-all duration-200 hover:border-[#35D0C5] hover:text-[#35D0C5] active:scale-98"
@@ -109,4 +114,3 @@ export const Hero: React.FC = () => {
     </section>
   )
 }
-

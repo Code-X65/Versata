@@ -36,7 +36,7 @@ const partnershipPrinciples = [
 const partnershipStages = [
   {
     number: '01',
-    title: 'Phase 1 — Market Development & Project Partner',
+    title: 'Phase 1  Market Development & Project Partner',
     lead: 'Initial cooperation focused on:',
     activities: [
       'Market research',
@@ -49,7 +49,7 @@ const partnershipStages = [
   },
   {
     number: '02',
-    title: 'Phase 2 — Authorised Reseller / Integration Partner',
+    title: 'Phase 2  Authorised Reseller / Integration Partner',
     lead: 'Subject to mutual agreement:',
     activities: [
       'Reselling',
@@ -62,7 +62,7 @@ const partnershipStages = [
   },
   {
     number: '03',
-    title: 'Phase 3 — Distribution & Market Expansion',
+    title: 'Phase 3  Distribution & Market Expansion',
     lead: 'For suitable products and established relationships:',
     activities: [
       'Territory development',
@@ -415,7 +415,7 @@ export const TechnologyPartnersPage: React.FC = () => {
         ctaLink="/partnerships"
         secondaryCtaText="Discuss Opportunities"
         secondaryCtaLink="/contact"
-        backgroundImage={heroTechnologyImg}
+        backgroundImage="https://i.pinimg.com/736x/5e/0b/e8/5e0be8e25fd7ff28b85e84b78f85559e.jpg"
       />
 
       <section ref={overviewRef} aria-labelledby="partnership-overview-heading" className="border-y border-slate-200 bg-white">

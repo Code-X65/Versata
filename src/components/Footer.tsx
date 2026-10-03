@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, MessageCircle } from 'lucide-react'
+import { whatsappUrl } from '@/lib/contact'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -59,14 +60,16 @@ export const Footer: React.FC = () => {
             </p>
 
             <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Link
+              <a
                 data-final-cta
-                to="/contact"
+                href={whatsappUrl('Hello Versata, I would like to discuss a technology requirement or opportunity.')}
+                target="_blank"
+                rel="noreferrer"
                 className="group inline-flex min-h-11 items-center justify-center gap-2 rounded-sm bg-[#00AFA9] px-5 py-3 text-xs font-bold text-white transition-all duration-200 hover:bg-[#008F8A] active:scale-98"
               >
-                Discuss Your Requirement
-                <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
-              </Link>
+                <MessageCircle className="h-3.5 w-3.5" aria-hidden="true" />
+                Chat on WhatsApp
+              </a>
               <Link
                 data-final-cta
                 to="/partnerships"

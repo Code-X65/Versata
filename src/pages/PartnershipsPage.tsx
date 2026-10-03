@@ -72,7 +72,7 @@ export const PartnershipsPage: React.FC = () => {
       ctaLink="/contact"
       secondaryCtaText="Explore Partnership Model"
       secondaryCtaLink="#partnership-model"
-      backgroundImage="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=2400&q=85"
+      backgroundImage="https://i.pinimg.com/736x/ca/b5/5c/cab55c32eaa89edf05888d4858beb67b.jpg"
       imageAlt="Global technology engineering and manufacturing partnership"
     />
 

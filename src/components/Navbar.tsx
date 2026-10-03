@@ -3,8 +3,9 @@ import { Link, NavLink } from 'react-router-dom'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { Menu, X } from 'lucide-react'
+import { Menu, MessageCircle, X } from 'lucide-react'
 import { Logo } from '@/components/Logo'
+import { whatsappUrl } from '@/lib/contact'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -183,16 +184,19 @@ export const Navbar: React.FC = () => {
 
         {/* Right: Clean Start a Project CTA Button */}
         <div className="hidden lg:flex items-center">
-          <Link
-            to="/contact"
+          <a
+            href={whatsappUrl()}
+            target="_blank"
+            rel="noreferrer"
             className={`inline-flex items-center justify-center rounded-sm px-4 xl:px-5 py-2.5 text-xs font-semibold shadow-xs transition-all duration-200 active:scale-98 ${
               isTransparent
                 ? 'bg-[#084d3c] text-white border border-white/20 hover:bg-[#063b2e] hover:border-white/40 hover:shadow-md'
                 : 'bg-[#084d3c] text-white hover:bg-[#063b2e] hover:shadow-md'
             }`}
           >
-           Contact Us 
-          </Link>
+            <MessageCircle className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
+            Chat on WhatsApp
+          </a>
         </div>
 
         {/* Mobile Hamburger Button */}
@@ -245,15 +249,16 @@ export const Navbar: React.FC = () => {
               </NavLink>
             ))}
             </div>
-            <Link
+            <a
               data-mobile-nav-item
-              to="/contact"
-              onClick={closeMobileMenu}
+              href={whatsappUrl()}
+              target="_blank"
+              rel="noreferrer"
               className="group mt-9 inline-flex min-h-11 w-fit items-center gap-2 rounded-sm bg-[#00AFA9] px-5 py-3 text-xs font-bold text-white transition-colors hover:bg-[#008F8A] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#071525]"
             >
-              Start a Project
+              Chat on WhatsApp
               <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
-            </Link>
+            </a>
           </nav>
         </div>
       )}

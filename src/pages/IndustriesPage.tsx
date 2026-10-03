@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ArrowRight } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 import { PageHero } from '@/components/PageHero'
+import industryCorporateImg from '@/assets/industry_corporate.jpg'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -416,7 +417,7 @@ export const IndustriesPage: React.FC = () => {
           </ol>
 
           <p data-industry-statement className="mt-12 max-w-3xl border-l-2 border-[#00AFA9] pl-5 text-xl font-medium leading-8 tracking-[-0.025em] text-[#102A56] sm:mt-14 sm:text-2xl sm:leading-9">
-            The same technology will not be right for every sector — relevance begins with the requirement.
+            The same technology will not be right for every sector  relevance begins with the requirement.
           </p>
         </div>
       </section>
@@ -426,7 +427,7 @@ export const IndustriesPage: React.FC = () => {
           <div className="grid gap-12 lg:grid-cols-12 lg:items-center lg:gap-16">
             <div className="lg:col-span-6">
               <p data-corporate-intro className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#00AFA9]">
-                01 — Corporate &amp; Commercial
+                01  Corporate &amp; Commercial
               </p>
               <h2 id="corporate-commercial-heading" data-corporate-intro className="mt-4 max-w-2xl text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-[#102A56] sm:text-5xl lg:text-[54px]">
                 Technology for Modern Business and Commercial Environments
@@ -436,16 +437,25 @@ export const IndustriesPage: React.FC = () => {
                 <p data-corporate-intro className="text-slate-500">Versata explores technology opportunities around specific organisational requirements, including digital infrastructure, workplace technology, collaboration and relevant energy-management needs.</p>
               </div>
               <p data-corporate-intro className="mt-10 max-w-xl border-l-2 border-[#00AFA9] pl-4 text-lg font-medium leading-7 tracking-[-0.02em] text-[#102A56]">
-                The starting point is the business requirement — not a predetermined technology package.
+                The starting point is the business requirement  not a predetermined technology package.
               </p>
             </div>
 
-            <div data-corporate-visual aria-hidden="true" className="relative min-h-72 overflow-hidden bg-[#102A56] p-7 text-white sm:min-h-80 sm:p-10 lg:col-span-6">
-              <div className="absolute inset-7 grid grid-cols-4 grid-rows-4 border border-white/15 sm:inset-10" />
-              <div className="absolute left-7 top-1/2 h-px w-[72%] bg-[#35D0C5]/60 sm:left-10" />
-              <div className="absolute left-1/2 top-7 h-[72%] w-px bg-white/15 sm:top-10" />
-              <p className="relative text-[10px] font-bold uppercase tracking-[0.2em] text-[#35D0C5]">Modern business environment</p>
-              <p className="relative mt-20 max-w-sm text-4xl font-bold leading-[0.96] tracking-[-0.05em] sm:mt-24 sm:text-5xl">Connect.<br />Collaborate.<br />Operate.</p>
+            <div data-corporate-visual className="relative aspect-[4/3] overflow-hidden rounded-xl border border-slate-200/80 shadow-lg lg:col-span-6 group">
+              <img
+                src={industryCorporateImg}
+                alt="Modern corporate boardroom and digital workplace collaboration"
+                className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#102A56]/85 via-[#102A56]/20 to-transparent pointer-events-none" />
+              <div className="absolute bottom-6 left-6 right-6 text-white">
+                <span className="inline-block rounded-full bg-[#00AFA9]/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-sm shadow-sm">
+                  Modern business environment
+                </span>
+                <p className="mt-2 text-xl font-bold tracking-tight text-white drop-shadow-md sm:text-2xl">
+                  Connect. Collaborate. Operate.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -466,7 +476,7 @@ export const IndustriesPage: React.FC = () => {
           <div className="grid gap-12 lg:grid-cols-12 lg:items-center lg:gap-16">
             <div className="lg:order-2 lg:col-span-6">
               <p data-education-intro className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#1557B0]">
-                02 — Education
+                02  Education
               </p>
               <h2 id="education-heading" data-education-intro className="mt-4 max-w-2xl text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-[#102A56] sm:text-5xl lg:text-[54px]">
                 Technology for Smarter Learning and Technical Skills Development
@@ -480,16 +490,21 @@ export const IndustriesPage: React.FC = () => {
               </p>
             </div>
 
-            <div data-education-visual aria-hidden="true" className="relative min-h-72 overflow-hidden bg-[#102A56] p-7 text-white sm:min-h-80 sm:p-10 lg:order-1 lg:col-span-6">
-              <div className="absolute inset-7 border border-white/15 sm:inset-10" />
-              <div className="absolute left-[18%] top-1/2 h-px w-[64%] bg-[#35D0C5]/60" />
-              <div className="absolute left-1/2 top-[18%] h-[64%] w-px bg-[#35D0C5]/60" />
-              <div className="absolute left-[18%] top-[18%] h-3 w-3 rounded-full border border-[#35D0C5] bg-[#102A56]" />
-              <div className="absolute right-[18%] top-[18%] h-3 w-3 rounded-full border border-[#35D0C5] bg-[#102A56]" />
-              <div className="absolute bottom-[18%] left-[18%] h-3 w-3 rounded-full border border-[#35D0C5] bg-[#102A56]" />
-              <div className="absolute bottom-[18%] right-[18%] h-3 w-3 rounded-full border border-[#35D0C5] bg-[#102A56]" />
-              <p className="relative text-[10px] font-bold uppercase tracking-[0.2em] text-[#35D0C5]">Innovation environment</p>
-              <p className="relative mt-20 max-w-sm text-4xl font-bold leading-[0.96] tracking-[-0.05em] sm:mt-24 sm:text-5xl">Learn.<br />Experiment.<br />Build.</p>
+            <div data-education-visual className="relative aspect-[4/3] overflow-hidden rounded-xl border border-slate-200/80 shadow-lg lg:order-1 lg:col-span-6 group">
+              <img
+                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1600&q=85"
+                alt="Smart education, robotics laboratory and modern digital learning"
+                className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#102A56]/85 via-[#102A56]/20 to-transparent pointer-events-none" />
+              <div className="absolute bottom-6 left-6 right-6 text-white">
+                <span className="inline-block rounded-full bg-[#1557B0]/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-sm shadow-sm">
+                  Innovation environment
+                </span>
+                <p className="mt-2 text-xl font-bold tracking-tight text-white drop-shadow-md sm:text-2xl">
+                  Learn. Experiment. Build.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -512,7 +527,7 @@ export const IndustriesPage: React.FC = () => {
           <div className="grid gap-12 lg:grid-cols-12 lg:items-center lg:gap-16">
             <div className="lg:col-span-6">
               <p data-energy-intro className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#00AFA9]">
-                03 — Energy
+                03  Energy
               </p>
               <h2 id="energy-heading" data-energy-intro className="mt-4 max-w-2xl text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-[#102A56] sm:text-5xl lg:text-[54px]">
                 Technology for Better Energy Visibility, Management and Infrastructure
@@ -523,14 +538,21 @@ export const IndustriesPage: React.FC = () => {
               </div>
             </div>
 
-            <div data-energy-visual aria-hidden="true" className="relative min-h-72 overflow-hidden bg-[#084d3c] p-7 text-white sm:min-h-80 sm:p-10 lg:col-span-6">
-              <div className="absolute inset-7 border border-[#35D0C5]/25 sm:inset-10" />
-              <div className="absolute inset-7 grid grid-cols-6 grid-rows-4 opacity-35 sm:inset-10"><span className="col-span-full border-b border-[#35D0C5]/30" /><span className="col-span-full border-b border-[#35D0C5]/30" /><span className="col-span-full border-b border-[#35D0C5]/30" /></div>
-              <div data-energy-line className="absolute left-7 top-[43%] h-px w-[22%] bg-[#35D0C5] sm:left-10" />
-              <div data-energy-line className="absolute left-[36%] top-[55%] h-px w-[24%] bg-[#35D0C5]" />
-              <div data-energy-line className="absolute left-[67%] top-[36%] h-px w-[22%] bg-[#35D0C5]" />
-              <p className="relative text-[10px] font-bold uppercase tracking-[0.2em] text-[#35D0C5]">Energy infrastructure</p>
-              <p className="relative mt-20 max-w-sm text-4xl font-bold leading-[0.96] tracking-[-0.05em] sm:mt-24 sm:text-5xl">Monitor.<br />Understand.<br />Manage.</p>
+            <div data-energy-visual className="relative aspect-[4/3] overflow-hidden rounded-xl border border-slate-200/80 shadow-lg lg:col-span-6 group">
+              <img
+                src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=1600&q=85"
+                alt="Commercial solar energy grid and smart power monitoring infrastructure"
+                className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#084d3c]/85 via-[#084d3c]/20 to-transparent pointer-events-none" />
+              <div className="absolute bottom-6 left-6 right-6 text-white">
+                <span className="inline-block rounded-full bg-[#00AFA9]/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-sm shadow-sm">
+                  Energy infrastructure
+                </span>
+                <p className="mt-2 text-xl font-bold tracking-tight text-white drop-shadow-md sm:text-2xl">
+                  Monitor. Understand. Manage.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -553,7 +575,7 @@ export const IndustriesPage: React.FC = () => {
           <div className="grid gap-12 lg:grid-cols-12 lg:items-center lg:gap-16">
             <div className="lg:order-2 lg:col-span-6">
               <p data-industrial-intro className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#1557B0]">
-                04 — Manufacturing &amp; Industrial
+                04  Manufacturing &amp; Industrial
               </p>
               <h2 id="industrial-heading" data-industrial-intro className="mt-4 max-w-2xl text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-[#102A56] sm:text-5xl lg:text-[54px]">
                 Technology for Industrial Operations, Monitoring and Infrastructure
@@ -567,13 +589,21 @@ export const IndustriesPage: React.FC = () => {
               </p>
             </div>
 
-            <div data-industrial-visual aria-hidden="true" className="relative min-h-72 overflow-hidden bg-[#102A56] p-7 text-white sm:min-h-80 sm:p-10 lg:order-1 lg:col-span-6">
-              <div className="absolute inset-7 grid grid-cols-5 grid-rows-5 border border-white/15 sm:inset-10" />
-              <div className="absolute inset-y-7 left-[30%] w-px bg-[#35D0C5]/50 sm:inset-y-10" />
-              <div className="absolute inset-y-7 right-[30%] w-px bg-[#35D0C5]/50 sm:inset-y-10" />
-              <div className="absolute left-7 right-7 top-1/2 h-px bg-[#35D0C5]/50 sm:left-10 sm:right-10" />
-              <p className="relative text-[10px] font-bold uppercase tracking-[0.2em] text-[#35D0C5]">Operational environment</p>
-              <p className="relative mt-20 max-w-sm text-4xl font-bold leading-[0.96] tracking-[-0.05em] sm:mt-24 sm:text-5xl">Observe.<br />Coordinate.<br />Develop.</p>
+            <div data-industrial-visual className="relative aspect-[4/3] overflow-hidden rounded-xl border border-slate-200/80 shadow-lg lg:order-1 lg:col-span-6 group">
+              <img
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1600&q=85"
+                alt="Modern automated manufacturing facility and industrial robotics"
+                className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#102A56]/85 via-[#102A56]/20 to-transparent pointer-events-none" />
+              <div className="absolute bottom-6 left-6 right-6 text-white">
+                <span className="inline-block rounded-full bg-[#1557B0]/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-sm shadow-sm">
+                  Operational environment
+                </span>
+                <p className="mt-2 text-xl font-bold tracking-tight text-white drop-shadow-md sm:text-2xl">
+                  Observe. Coordinate. Develop.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -596,7 +626,7 @@ export const IndustriesPage: React.FC = () => {
           <div className="grid gap-12 lg:grid-cols-12 lg:items-center lg:gap-16">
             <div className="lg:col-span-6">
               <p data-hospitality-intro className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#00AFA9]">
-                05 — Hospitality
+                05  Hospitality
               </p>
               <h2 id="hospitality-heading" data-hospitality-intro className="mt-4 max-w-2xl text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-[#102A56] sm:text-5xl lg:text-[54px]">
                 Technology for Modern Hospitality Facilities and Operations
@@ -606,18 +636,25 @@ export const IndustriesPage: React.FC = () => {
                 <p data-hospitality-intro className="text-slate-500">Versata explores technology opportunities around digital infrastructure, communication, collaboration, energy management and other practical hospitality requirements where relevant.</p>
               </div>
               <p data-hospitality-intro className="mt-10 max-w-xl border-l-2 border-[#00AFA9] pl-4 text-lg font-medium leading-7 tracking-[-0.02em] text-[#102A56]">
-                The technology should support the facility&apos;s real operational requirement — not simply add another layer of complexity.
+                The technology should support the facility&apos;s real operational requirement  not simply add another layer of complexity.
               </p>
             </div>
 
-            <div data-hospitality-visual aria-hidden="true" className="relative min-h-72 overflow-hidden bg-[#102A56] p-7 text-white sm:min-h-80 sm:p-10 lg:col-span-6">
-              <div className="absolute inset-7 border border-white/15 sm:inset-10" />
-              <div className="absolute bottom-7 left-[22%] top-7 w-px bg-[#35D0C5]/45 sm:bottom-10 sm:top-10" />
-              <div className="absolute bottom-7 left-1/2 top-7 w-px bg-white/15 sm:bottom-10 sm:top-10" />
-              <div className="absolute bottom-7 right-[22%] top-7 w-px bg-[#35D0C5]/45 sm:bottom-10 sm:top-10" />
-              <div className="absolute left-7 right-7 top-1/2 h-px bg-white/15 sm:left-10 sm:right-10" />
-              <p className="relative text-[10px] font-bold uppercase tracking-[0.2em] text-[#35D0C5]">Modern facility environment</p>
-              <p className="relative mt-20 max-w-sm text-4xl font-bold leading-[0.96] tracking-[-0.05em] sm:mt-24 sm:text-5xl">Connect.<br />Coordinate.<br />Support.</p>
+            <div data-hospitality-visual className="relative aspect-[4/3] overflow-hidden rounded-xl border border-slate-200/80 shadow-lg lg:col-span-6 group">
+              <img
+                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=85"
+                alt="Modern luxury hospitality facility and architectural interior"
+                className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#102A56]/85 via-[#102A56]/20 to-transparent pointer-events-none" />
+              <div className="absolute bottom-6 left-6 right-6 text-white">
+                <span className="inline-block rounded-full bg-[#00AFA9]/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-sm shadow-sm">
+                  Modern facility environment
+                </span>
+                <p className="mt-2 text-xl font-bold tracking-tight text-white drop-shadow-md sm:text-2xl">
+                  Connect. Coordinate. Support.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -640,7 +677,7 @@ export const IndustriesPage: React.FC = () => {
           <div className="grid gap-12 lg:grid-cols-12 lg:items-center lg:gap-16">
             <div className="lg:order-2 lg:col-span-6">
               <p data-healthcare-intro className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#1557B0]">
-                06 — Healthcare
+                06  Healthcare
               </p>
               <h2 id="healthcare-heading" data-healthcare-intro className="mt-4 max-w-2xl text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-[#102A56] sm:text-5xl lg:text-[54px]">
                 Technology Opportunities for Modern Healthcare Facilities
@@ -651,14 +688,21 @@ export const IndustriesPage: React.FC = () => {
               </div>
             </div>
 
-            <div data-healthcare-visual aria-hidden="true" className="relative min-h-64 overflow-hidden bg-[#102A56] p-7 text-white sm:min-h-72 sm:p-10 lg:order-1 lg:col-span-6">
-              <div className="absolute inset-7 border border-white/15 sm:inset-10" />
-              <div className="absolute left-7 right-7 top-[34%] h-px bg-[#35D0C5]/45 sm:left-10 sm:right-10" />
-              <div className="absolute left-7 right-7 top-[66%] h-px bg-white/15 sm:left-10 sm:right-10" />
-              <div className="absolute bottom-7 left-[30%] top-7 w-px bg-white/15 sm:bottom-10 sm:top-10" />
-              <div className="absolute bottom-7 right-[30%] top-7 w-px bg-[#35D0C5]/45 sm:bottom-10 sm:top-10" />
-              <p className="relative text-[10px] font-bold uppercase tracking-[0.2em] text-[#35D0C5]">Facility infrastructure</p>
-              <p className="relative mt-16 max-w-sm text-4xl font-bold leading-[0.96] tracking-[-0.05em] sm:mt-20 sm:text-5xl">Reliable.<br />Relevant.<br />Practical.</p>
+            <div data-healthcare-visual className="relative aspect-[4/3] overflow-hidden rounded-xl border border-slate-200/80 shadow-lg lg:order-1 lg:col-span-6 group">
+              <img
+                src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=85"
+                alt="Clean modern healthcare clinic and diagnostic hospital facility"
+                className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#102A56]/85 via-[#102A56]/20 to-transparent pointer-events-none" />
+              <div className="absolute bottom-6 left-6 right-6 text-white">
+                <span className="inline-block rounded-full bg-[#1557B0]/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-sm shadow-sm">
+                  Facility infrastructure
+                </span>
+                <p className="mt-2 text-xl font-bold tracking-tight text-white drop-shadow-md sm:text-2xl">
+                  Reliable. Relevant. Practical.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -681,7 +725,7 @@ export const IndustriesPage: React.FC = () => {
           <div className="grid gap-12 lg:grid-cols-12 lg:items-center lg:gap-16">
             <div className="lg:col-span-6">
               <p data-government-intro className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#1557B0]">
-                07 — Government &amp; Public Sector
+                07  Government &amp; Public Sector
               </p>
               <h2 id="government-heading" data-government-intro className="mt-4 max-w-2xl text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-[#102A56] sm:text-5xl lg:text-[54px]">
                 Technology for Institutional and Public-Sector Requirements
@@ -695,13 +739,21 @@ export const IndustriesPage: React.FC = () => {
               </p>
             </div>
 
-            <div data-government-visual aria-hidden="true" className="relative min-h-72 overflow-hidden bg-[#102A56] p-7 text-white sm:min-h-80 sm:p-10 lg:col-span-6">
-              <div className="absolute inset-7 border border-white/15 sm:inset-10" />
-              <div className="absolute bottom-7 left-7 right-7 h-[38%] border-x border-t border-[#35D0C5]/40 sm:bottom-10 sm:left-10 sm:right-10" />
-              <div className="absolute bottom-7 left-[28%] top-7 w-px bg-white/15 sm:bottom-10 sm:top-10" />
-              <div className="absolute bottom-7 right-[28%] top-7 w-px bg-[#35D0C5]/45 sm:bottom-10 sm:top-10" />
-              <p className="relative text-[10px] font-bold uppercase tracking-[0.2em] text-[#35D0C5]">Institutional infrastructure</p>
-              <p className="relative mt-20 max-w-sm text-4xl font-bold leading-[0.96] tracking-[-0.05em] sm:mt-24 sm:text-5xl">Define.<br />Source.<br />Develop.</p>
+            <div data-government-visual className="relative aspect-[4/3] overflow-hidden rounded-xl border border-slate-200/80 shadow-lg lg:col-span-6 group">
+              <img
+                src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1600&q=85"
+                alt="Modern civic and governmental public sector infrastructure"
+                className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#102A56]/85 via-[#102A56]/20 to-transparent pointer-events-none" />
+              <div className="absolute bottom-6 left-6 right-6 text-white">
+                <span className="inline-block rounded-full bg-[#00AFA9]/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-sm shadow-sm">
+                  Institutional infrastructure
+                </span>
+                <p className="mt-2 text-xl font-bold tracking-tight text-white drop-shadow-md sm:text-2xl">
+                  Define. Source. Develop.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -723,7 +775,7 @@ export const IndustriesPage: React.FC = () => {
           <div className="grid gap-12 lg:grid-cols-12 lg:items-center lg:gap-16">
             <div className="lg:order-2 lg:col-span-6">
               <p data-real-estate-intro className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#00AFA9]">
-                08 — Real Estate &amp; Infrastructure
+                08  Real Estate &amp; Infrastructure
               </p>
               <h2 id="real-estate-heading" data-real-estate-intro className="mt-4 max-w-2xl text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-[#102A56] sm:text-5xl lg:text-[54px]">
                 Technology for Modern Buildings, Facilities and Infrastructure
@@ -737,15 +789,21 @@ export const IndustriesPage: React.FC = () => {
               </p>
             </div>
 
-            <div data-real-estate-visual aria-hidden="true" className="relative min-h-72 overflow-hidden bg-[#102A56] p-7 text-white sm:min-h-80 sm:p-10 lg:order-1 lg:col-span-6">
-              <div className="absolute inset-7 grid grid-cols-5 grid-rows-5 border border-white/15 sm:inset-10" />
-              <div data-real-estate-line className="absolute left-7 right-7 top-[30%] h-px bg-[#35D0C5]/55 sm:left-10 sm:right-10" />
-              <div data-real-estate-line className="absolute left-7 right-7 top-1/2 h-px bg-white/15 sm:left-10 sm:right-10" />
-              <div data-real-estate-line className="absolute left-7 right-7 top-[70%] h-px bg-[#35D0C5]/55 sm:left-10 sm:right-10" />
-              <div className="absolute bottom-7 left-[26%] top-7 w-px bg-white/15 sm:bottom-10 sm:top-10" />
-              <div className="absolute bottom-7 right-[26%] top-7 w-px bg-[#35D0C5]/45 sm:bottom-10 sm:top-10" />
-              <p className="relative text-[10px] font-bold uppercase tracking-[0.2em] text-[#35D0C5]">Built environment</p>
-              <p className="relative mt-20 max-w-sm text-4xl font-bold leading-[0.96] tracking-[-0.05em] sm:mt-24 sm:text-5xl">Connect.<br />Monitor.<br />Develop.</p>
+            <div data-real-estate-visual className="relative aspect-[4/3] overflow-hidden rounded-xl border border-slate-200/80 shadow-lg lg:order-1 lg:col-span-6 group">
+              <img
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=85"
+                alt="Modern architectural commercial real estate and sustainable smart buildings"
+                className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#102A56]/85 via-[#102A56]/20 to-transparent pointer-events-none" />
+              <div className="absolute bottom-6 left-6 right-6 text-white">
+                <span className="inline-block rounded-full bg-[#1557B0]/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-sm shadow-sm">
+                  Built environment
+                </span>
+                <p className="mt-2 text-xl font-bold tracking-tight text-white drop-shadow-md sm:text-2xl">
+                  Connect. Monitor. Develop.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -858,7 +916,7 @@ export const IndustriesPage: React.FC = () => {
               <p data-industries-cta-copy className="text-slate-300">Versata can explore suitable technologies, products and international providers that may be relevant to the requirement.</p>
             </div>
             <div data-industries-cta-action className="mt-9">
-              <p className="mb-4 text-xs leading-5 text-slate-200 sm:text-[13px]">You can start with the challenge, project or requirement — not necessarily the technology.</p>
+              <p className="mb-4 text-xs leading-5 text-slate-200 sm:text-[13px]">You can start with the challenge, project or requirement  not necessarily the technology.</p>
               <Link
                 to="/contact"
                 className="group inline-flex min-h-11 items-center justify-center gap-2 rounded-sm bg-[#00AFA9] px-5 py-3 text-xs font-bold text-white transition-all duration-200 hover:bg-[#008F8A] hover:shadow-md active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#1557B0]"

@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ArrowRight } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 import { PageHero } from '@/components/PageHero'
+import { whatsappUrl } from '@/lib/contact'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -46,7 +47,7 @@ const initialValues: FormValues = {
 const contactDetails = [
   ['Office', 'Office 7, Adewale Adedeji Ajao Estate, Lagos, Nigeria'],
   ['Phone', '+234 803 782 5970', 'tel:+2348037825970'],
-  ['Phone', '+234 906 336 4111', 'tel:+2349063364111'],
+  ['WhatsApp', '+234 906 336 4111', whatsappUrl()],
   ['Email', 'contact@versatadigitalsolutions.com', 'mailto:contact@versatadigitalsolutions.com'],
 ] as const
 
@@ -149,7 +150,7 @@ export const ContactPage: React.FC = () => {
         ctaLink="#contact-form"
         secondaryCtaText="Explore Partnerships"
         secondaryCtaLink="/partnerships"
-        backgroundImage="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=2400&q=85"
+        backgroundImage="https://images.pexels.com/photos/4212952/pexels-photo-4212952.jpeg"
         imageAlt="Modern technology operations and client consultation centre"
       />
 

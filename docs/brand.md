@@ -1,4 +1,4 @@
-Versata Digital Solutions — Brand Guidelines
+Versata Digital Solutions Brand Guidelines
 
 1. Brand Overview
 
@@ -173,13 +173,13 @@ Do not apply gradients to every component. The gradient should remain a recogniz
 
 A recommended visual balance for the website:
 
-60% — White / light neutral backgrounds
+60% White / light neutral backgrounds
 
-25% — Navy / dark typography and structural elements
+25% Navy / dark typography and structural elements
 
-10% — Blue
+10% Blue
 
-5% — Teal / cyan accents
+5% Teal / cyan accents
 
 The goal is a clean professional interface with controlled use of the stronger brand colors.
 

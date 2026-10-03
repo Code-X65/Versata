@@ -179,7 +179,7 @@ export const ProjectsOpportunitiesPage: React.FC = () => {
         ctaLink="#opportunities-overview"
         secondaryCtaText="Discuss a Project"
         secondaryCtaLink="/contact"
-        backgroundImage="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=2400&q=85"
+        backgroundImage="https://i.pinimg.com/1200x/8f/c1/6d/8fc16df611fc278a8f1a1c757bf17add.jpg"
         imageAlt="Renewable energy solar installation and smart utility infrastructure"
       />
 
@@ -198,7 +198,7 @@ export const ProjectsOpportunitiesPage: React.FC = () => {
 
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:mt-16 lg:gap-10">
             <article data-opportunity-path className="relative overflow-hidden border-t border-[#1557B0]/20 pt-6 sm:pt-8">
-              <span className="text-xs font-bold tracking-[0.13em] text-[#1557B0]">01 — Customer / Project Requirement</span>
+              <span className="text-xs font-bold tracking-[0.13em] text-[#1557B0]">01  Customer / Project Requirement</span>
               <h3 className="mt-5 max-w-md text-3xl font-bold leading-[1.04] tracking-[-0.04em] text-[#102A56] sm:text-4xl">A Requirement Looking for the Right Technology</h3>
               <div className="mt-6 max-w-md space-y-3 text-sm leading-6 text-slate-600 sm:text-[15px] sm:leading-7">
                 <p>An organisation, institution or project may already have a defined technology, infrastructure or operational requirement.</p>
@@ -208,7 +208,7 @@ export const ProjectsOpportunitiesPage: React.FC = () => {
             </article>
 
             <article data-opportunity-path className="relative overflow-hidden border-t border-[#1557B0]/20 pt-6 sm:pt-8">
-              <span className="text-xs font-bold tracking-[0.13em] text-[#1557B0]">02 — Technology / Market Opportunity</span>
+              <span className="text-xs font-bold tracking-[0.13em] text-[#1557B0]">02  Technology / Market Opportunity</span>
               <h3 className="mt-5 max-w-md text-3xl font-bold leading-[1.04] tracking-[-0.04em] text-[#102A56] sm:text-4xl">A Technology Looking for the Right Market Opportunity</h3>
               <div className="mt-6 max-w-md space-y-3 text-sm leading-6 text-slate-600 sm:text-[15px] sm:leading-7">
                 <p>An international manufacturer or technology provider may have a product or solution with potential relevance to the Nigerian market.</p>
@@ -334,7 +334,7 @@ export const ProjectsOpportunitiesPage: React.FC = () => {
               Two Ways to Start
             </p>
             <h2 id="two-paths-heading" data-two-paths-intro className="mt-4 text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-[#102A56] sm:text-5xl lg:text-[54px]">
-              Bring the Requirement — or Bring the Technology
+              Bring the Requirement  or Bring the Technology
             </h2>
           </div>
 
