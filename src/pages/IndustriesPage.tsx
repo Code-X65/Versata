@@ -19,7 +19,7 @@ const industryApproachPrinciples = [
 
 const corporateTechnologyAreas = [
   ['01', 'Digital Infrastructure', 'Technology supporting modern business and organisational infrastructure requirements.'],
-  ['02', 'Smart Workplace Technology', 'Technology supporting modern Agricultural systems and operational needs.'],
+  ['02', 'Smart Agricultural Technologies', 'Technology supporting modern Agricultural systems and operational needs.'],
   ['03', 'Collaboration & Communication', 'Solutions involving smart meeting environments, digital collaboration, wireless presentation and video conferencing.'],
   ['04', 'Energy Management', 'Energy monitoring, smart metering and energy-management technologies where relevant to the organisation\'s requirements.'],
 ] as const
@@ -382,7 +382,7 @@ export const IndustriesPage: React.FC = () => {
         ctaLink="#industry-overview"
         secondaryCtaText="Discuss Requirements"
         secondaryCtaLink="/contact"
-        backgroundImage="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=2400&q=85"
+        backgroundImage="https://i.pinimg.com/1200x/07/2f/0d/072f0d8ca3fb7cb19b34b009d4b026cc.jpg"
         imageAlt="Smart power grid transmission towers and clean industrial infrastructure"
       />
 
