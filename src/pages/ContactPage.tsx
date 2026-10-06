@@ -3,10 +3,12 @@ import type { FormEvent } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, CheckCircle2, MessageCircle } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 import { PageHero } from '@/components/PageHero'
 import { whatsappUrl } from '@/lib/contact'
+import { SocialLinks } from '@/components/SocialLinks'
+import heroContactImg from '@/assets/hero_contact.webp'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -58,7 +60,8 @@ export const ContactPage: React.FC = () => {
   const enquirySelectRef = useRef<HTMLSelectElement>(null)
   const [values, setValues] = useState<FormValues>(initialValues)
   const [errors, setErrors] = useState<FormErrors>({})
-  const [submitState, setSubmitState] = useState<'idle' | 'unavailable'>('idle')
+  const [submitState, setSubmitState] = useState<'idle' | 'success'>('idle')
+  const [lastSubmittedUrl, setLastSubmittedUrl] = useState('')
 
   useGSAP(
     () => {
@@ -123,8 +126,26 @@ export const ContactPage: React.FC = () => {
     setErrors(nextErrors)
     if (Object.keys(nextErrors).length > 0 || values.website) return
 
-    // No enquiry endpoint or form service is configured in this project.
-    setSubmitState('unavailable')
+    // Build structured WhatsApp message
+    const formattedLines = [
+      `*New Enquiry via Versata Website*`,
+      ``,
+      `*Full Name:* ${fullName}`,
+      values.company.trim() ? `*Company:* ${values.company.trim()}` : null,
+      `*Email:* ${email}`,
+      values.phone.trim() ? `*Phone:* ${values.phone.trim()}` : null,
+      `*Enquiry Topic:* ${values.enquiryType}`,
+      ``,
+      `*Message:*`,
+      message,
+    ].filter(Boolean).join('\n')
+
+    const targetUrl = whatsappUrl(formattedLines)
+    setLastSubmittedUrl(targetUrl)
+    setSubmitState('success')
+
+    // Open WhatsApp in new window/tab
+    window.open(targetUrl, '_blank', 'noopener,noreferrer')
   }
 
   const startConversation = (enquiryType: EnquiryType) => {
@@ -150,7 +171,7 @@ export const ContactPage: React.FC = () => {
         ctaLink="#contact-form"
         secondaryCtaText="Explore Partnerships"
         secondaryCtaLink="/partnerships"
-        backgroundImage="https://images.pexels.com/photos/4212952/pexels-photo-4212952.jpeg"
+        backgroundImage={heroContactImg}
         imageAlt="Modern technology operations and client consultation centre"
       />
 
@@ -196,10 +217,41 @@ export const ContactPage: React.FC = () => {
                 <label htmlFor="contact-website">Website</label>
                 <input id="contact-website" name="website" tabIndex={-1} autoComplete="off" value={values.website} onChange={(event) => updateValue('website', event.target.value)} />
               </div>
-              {submitState === 'unavailable' && <p role="alert" className="border-l-2 border-[#00AFA9] bg-[#00AFA9]/10 px-4 py-3 text-sm leading-6 text-[#084d3c]">We couldn&apos;t send your enquiry because online submission is not configured yet. Please use the contact details alongside this form to reach Versata directly.</p>}
-              <button type="submit" className="group inline-flex min-h-11 items-center gap-2 rounded-sm bg-[#084d3c] px-5 py-3 text-xs font-bold text-white transition-all duration-200 hover:bg-[#063b2e] active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00AFA9] focus-visible:ring-offset-2">
-                Send Enquiry <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1 group-focus-visible:translate-x-1" aria-hidden="true" />
-              </button>
+              {submitState === 'success' && (
+                <div role="status" className="rounded-md border border-[#00AFA9]/40 bg-[#00AFA9]/10 p-4 text-xs leading-relaxed text-[#084d3c] animate-in fade-in">
+                  <div className="flex items-center gap-2 font-bold text-sm text-[#084d3c]">
+                    <CheckCircle2 className="h-4 w-4 text-[#00AFA9]" />
+                    <span>Enquiry Ready to Send!</span>
+                  </div>
+                  <p className="mt-1 text-slate-700">
+                    We have formatted your inquiry and opened WhatsApp to deliver it directly to our team.
+                  </p>
+                  {lastSubmittedUrl && (
+                    <a
+                      href={lastSubmittedUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-3 inline-flex items-center gap-1.5 font-bold text-[#084d3c] hover:underline"
+                    >
+                      <MessageCircle className="h-3.5 w-3.5 text-[#00AFA9]" />
+                      Click here if WhatsApp did not open automatically &rarr;
+                    </a>
+                  )}
+                </div>
+              )}
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+                <button
+                  type="submit"
+                  className="group inline-flex min-h-11 items-center justify-center gap-2 rounded-sm bg-[#084d3c] px-6 py-3 text-xs font-bold text-white transition-all duration-200 hover:bg-[#063b2e] active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00AFA9] focus-visible:ring-offset-2"
+                >
+                  <MessageCircle className="h-3.5 w-3.5" aria-hidden="true" />
+                  Send via WhatsApp
+                  <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1 group-focus-visible:translate-x-1" aria-hidden="true" />
+                </button>
+                <p className="text-[11px] text-slate-500">
+                  Instant response from our Lagos advisory team
+                </p>
+              </div>
             </form>
           </div>
 
@@ -216,6 +268,12 @@ export const ContactPage: React.FC = () => {
                   </dd>
                 </div>
               ))}
+              <div data-contact-detail className="border-t border-slate-200 pt-6">
+                <dt className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-500">Social Channels</dt>
+                <dd className="mt-3">
+                  <SocialLinks variant="pill" showLabels={true} className="flex-wrap" />
+                </dd>
+              </div>
             </dl>
           </aside>
         </div>

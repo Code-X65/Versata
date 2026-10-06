@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ArrowRight } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 import { PageHero } from '@/components/PageHero'
+import heroOpportunitiesImg from '@/assets/hero_opportunities.webp'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -179,7 +180,7 @@ export const ProjectsOpportunitiesPage: React.FC = () => {
         ctaLink="#opportunities-overview"
         secondaryCtaText="Discuss a Project"
         secondaryCtaLink="/contact"
-        backgroundImage="https://i.pinimg.com/1200x/8f/c1/6d/8fc16df611fc278a8f1a1c757bf17add.jpg"
+        backgroundImage={heroOpportunitiesImg}
         imageAlt="Renewable energy solar installation and smart utility infrastructure"
       />
 

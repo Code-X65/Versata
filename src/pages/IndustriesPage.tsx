@@ -6,7 +6,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ArrowRight } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 import { PageHero } from '@/components/PageHero'
-import industryCorporateImg from '@/assets/industry_corporate.jpg'
+import industryCorporateImg from '@/assets/industry_corporate.webp'
+import heroIndustriesImg from '@/assets/hero_industries.webp'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -382,7 +383,7 @@ export const IndustriesPage: React.FC = () => {
         ctaLink="#industry-overview"
         secondaryCtaText="Discuss Requirements"
         secondaryCtaLink="/contact"
-        backgroundImage="https://i.pinimg.com/1200x/07/2f/0d/072f0d8ca3fb7cb19b34b009d4b026cc.jpg"
+        backgroundImage={heroIndustriesImg}
         imageAlt="Smart power grid transmission towers and clean industrial infrastructure"
       />
 

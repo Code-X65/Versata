@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ArrowRight } from 'lucide-react'
-import defaultHeroBg from '@/assets/hero_technology.jpg'
+import defaultHeroBg from '@/assets/hero_technology.webp'
 
 export interface PageHeroProps {
   title: string

@@ -7,9 +7,9 @@ import { ArrowRight } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 
 import { PageHero } from '@/components/PageHero'
-import heroSolutionsImg from '@/assets/hero_solutions.jpg'
-import smartEnergyImg from '@/assets/solution_smart_energy.jpg'
-import digitalInfraImg from '@/assets/solution_digital_infra.jpg'
+import heroSolutionsImg from '@/assets/hero_solutions.webp'
+import smartEnergyImg from '@/assets/solution_smart_energy.webp'
+import digitalInfraImg from '@/assets/solution_digital_infra.webp'
 
 gsap.registerPlugin(ScrollTrigger)
 

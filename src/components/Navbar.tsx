@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Menu, MessageCircle, X } from 'lucide-react'
 import { Logo } from '@/components/Logo'
 import { whatsappUrl } from '@/lib/contact'
+import { SocialLinks } from '@/components/SocialLinks'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -259,6 +260,11 @@ export const Navbar: React.FC = () => {
               Chat on WhatsApp
               <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
             </a>
+
+            <div data-mobile-nav-item className="mt-8 border-t border-white/15 pt-6">
+              <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#35D0C5]">Connect With Us</p>
+              <SocialLinks variant="subtle" />
+            </div>
           </nav>
         </div>
       )}

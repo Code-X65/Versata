@@ -5,7 +5,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { SEO } from '@/components/SEO'
 import { Hero } from '@/components/Hero'
-import partnershipEmblem from '@/assets/Glossy Teal Ribbon Growth Emblem.png'
+import partnershipEmblem from '@/assets/Glossy Teal Ribbon Growth Emblem.webp'
 import {
   ArrowRight,
 } from 'lucide-react'

@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import heroEnergyGridImg from '@/assets/hero_energy_grid.jpg'
+import heroEnergyGridImg from '@/assets/hero_energy_grid.webp'
 import { MessageCircle } from 'lucide-react'
 import { whatsappUrl } from '@/lib/contact'
 

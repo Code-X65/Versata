@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ArrowRight } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 import { PageHero } from '@/components/PageHero'
+import heroTechnologyPartnerImg from '@/assets/hero_technology_partner.webp'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -414,7 +415,7 @@ export const TechnologyPartnersPage: React.FC = () => {
         ctaLink="/partnerships"
         secondaryCtaText="Discuss Opportunities"
         secondaryCtaLink="/contact"
-        backgroundImage="https://i.pinimg.com/736x/5e/0b/e8/5e0be8e25fd7ff28b85e84b78f85559e.jpg"
+        backgroundImage={heroTechnologyPartnerImg}
       />
 
       <section ref={overviewRef} aria-labelledby="partnership-overview-heading" className="border-y border-slate-200 bg-white">

@@ -5,8 +5,11 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ArrowRight, MessageCircle } from 'lucide-react'
 import { whatsappUrl } from '@/lib/contact'
+import { SocialLinks } from '@/components/SocialLinks'
 
 gsap.registerPlugin(ScrollTrigger)
+
+const CURRENT_YEAR = new Date().getFullYear()
 
 export const Footer: React.FC = () => {
   const finalCtaSectionRef = useRef<HTMLElement>(null)
@@ -108,6 +111,19 @@ export const Footer: React.FC = () => {
               <a href="mailto:contact@versatadigitalsolutions.com" className="mt-3 block break-all text-xs leading-5 text-slate-300 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#35D0C5] sm:text-[13px]">
                 contact@versatadigitalsolutions.com
               </a>
+            </div>
+          </div>
+
+          {/* Sub-footer Bottom Bar with Social Links */}
+          <div data-final-divider aria-hidden="true" className="relative mt-12 h-px w-full bg-white/10" />
+
+          <div className="relative mt-8 flex flex-col items-center justify-between gap-5 text-center sm:flex-row sm:text-left">
+            <p className="text-xs text-slate-300">
+              &copy; {CURRENT_YEAR} Versata Digital Solutions. All rights reserved.
+            </p>
+            <div className="flex items-center gap-3">
+              <span className="hidden text-xs font-semibold uppercase tracking-wider text-slate-300 sm:inline-block">Connect:</span>
+              <SocialLinks variant="subtle" />
             </div>
           </div>
         </div>
