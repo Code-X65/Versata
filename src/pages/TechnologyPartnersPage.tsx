@@ -6,7 +6,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ArrowRight } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 import { PageHero } from '@/components/PageHero'
-import heroTechnologyImg from '@/assets/hero_technology.jpg'
 
 gsap.registerPlugin(ScrollTrigger)
 
