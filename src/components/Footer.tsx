@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ArrowRight, MessageCircle } from 'lucide-react'
 import { whatsappUrl } from '@/lib/contact'
 import { SocialLinks } from '@/components/SocialLinks'
+import { Logo } from '@/components/Logo'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -118,9 +119,13 @@ export const Footer: React.FC = () => {
           <div data-final-divider aria-hidden="true" className="relative mt-12 h-px w-full bg-white/10" />
 
           <div className="relative mt-8 flex flex-col items-center justify-between gap-5 text-center sm:flex-row sm:text-left">
-            <p className="text-xs text-slate-300">
-              &copy; {CURRENT_YEAR} Versata Digital Solutions. All rights reserved.
-            </p>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+              <Logo size="sm" textColor="text-white" showSubtitle={false} />
+              <span className="hidden sm:inline-block text-white/20">|</span>
+              <p className="text-xs text-slate-300">
+                &copy; {CURRENT_YEAR} Versata Digital Solutions. All rights reserved.
+              </p>
+            </div>
             <div className="flex items-center gap-3">
               <span className="hidden text-xs font-semibold uppercase tracking-wider text-slate-300 sm:inline-block">Connect:</span>
               <SocialLinks variant="subtle" />

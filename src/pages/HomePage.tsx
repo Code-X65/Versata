@@ -510,7 +510,7 @@ export const HomePage: React.FC = () => {
 
             <Link
               to="/about"
-              className="mt-8 inline-flex items-center justify-center gap-2 rounded-sm bg-[#084d3c] px-5 py-3 text-xs font-semibold text-white shadow-xs transition-all duration-200 hover:bg-[#063b2e] hover:shadow-md active:scale-98"
+              className="mt-8 inline-flex items-center justify-center gap-2 rounded-sm bg-[#00AFA9] px-5 py-3 text-xs font-semibold text-white shadow-xs transition-all duration-200 hover:bg-[#008F8A] hover:shadow-md active:scale-98"
             >
               Learn More About Versata
               <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
@@ -960,7 +960,7 @@ export const HomePage: React.FC = () => {
                 light: 'bg-white text-[#102A56]',
                 teal: 'bg-[#DDF7F5] text-[#102A56]',
                 wide: 'bg-[#E8F0FC] text-[#102A56] md:col-span-2',
-                dark: 'bg-[#084d3c] text-white',
+                dark: 'bg-[#071525] text-white',
               }
               const isDark = area.variant === 'featured' || area.variant === 'dark'
 
@@ -988,7 +988,7 @@ export const HomePage: React.FC = () => {
           <Link
             data-opportunities-cta
             to="/opportunities"
-            className="mt-8 inline-flex items-center gap-2 rounded-sm bg-[#084d3c] px-5 py-3 text-xs font-bold text-white transition-all duration-200 hover:bg-[#063b2e] active:scale-98"
+            className="mt-8 inline-flex items-center gap-2 rounded-sm bg-[#00AFA9] px-5 py-3 text-xs font-bold text-white transition-all duration-200 hover:bg-[#008F8A] active:scale-98"
           >
             Explore Opportunities
             <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />

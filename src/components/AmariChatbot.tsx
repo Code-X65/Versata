@@ -267,7 +267,7 @@ export const AmariChatbot: React.FC = () => {
                         className={`rounded-2xl px-4 py-3 shadow-xs ${
                           isAmari
                             ? 'rounded-bl-xs border border-slate-200/80 bg-white text-[#102A56]'
-                            : 'rounded-br-xs bg-[#084d3c] text-white'
+                            : 'rounded-br-xs bg-[#102A56] text-white'
                         }`}
                       >
                         <div className="text-xs leading-relaxed">
@@ -321,7 +321,7 @@ export const AmariChatbot: React.FC = () => {
                             key={sIdx}
                             type="button"
                             onClick={() => handleSendMessage(suggestion)}
-                            className="rounded-full border border-[#00AFA9]/30 bg-white px-2.5 py-1 text-[10.5px] font-medium text-[#084d3c] shadow-2xs transition-all hover:border-[#00AFA9] hover:bg-[#00AFA9]/10 active:scale-95 text-left"
+                            className="rounded-full border border-[#00AFA9]/30 bg-white px-2.5 py-1 text-[10.5px] font-medium text-[#102A56] shadow-2xs transition-all hover:border-[#00AFA9] hover:bg-[#00AFA9]/10 active:scale-95 text-left"
                           >
                             💬 {suggestion}
                           </button>
@@ -391,7 +391,7 @@ export const AmariChatbot: React.FC = () => {
           onClick={toggleChat}
           aria-label={isOpen ? 'Close Amari chat' : 'Open Amari chat'}
           aria-expanded={isOpen}
-          className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-[#084d3c] text-white shadow-xl transition-all duration-300 hover:bg-[#063b2e] hover:scale-105 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#35D0C5] focus-visible:ring-offset-2"
+          className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-[#071525] text-white shadow-xl transition-all duration-300 hover:bg-[#102A56] hover:scale-105 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#35D0C5] focus-visible:ring-offset-2"
         >
           {isOpen ? (
             <X className="h-6 w-6 transition-transform duration-200 group-hover:rotate-90" />
@@ -402,7 +402,7 @@ export const AmariChatbot: React.FC = () => {
                 alt="Amari"
                 className="h-12 w-12 rounded-full border-2 border-[#35D0C5] object-cover"
               />
-              <span className="absolute -bottom-0.5 -right-0.5 h-3.5 w-3.5 rounded-full border-2 border-[#084d3c] bg-emerald-400 animate-pulse" />
+              <span className="absolute -bottom-0.5 -right-0.5 h-3.5 w-3.5 rounded-full border-2 border-[#071525] bg-emerald-400 animate-pulse" />
             </div>
           )}
         </button>

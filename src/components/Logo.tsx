@@ -1,53 +1,73 @@
 import React from 'react'
+import logoEmblemImg from '@/assets/logo_emblem.webp'
 
 interface LogoProps {
   className?: string
   showWordmark?: boolean
-  size?: 'sm' | 'md' | 'lg'
+  showSubtitle?: boolean
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   textColor?: string
 }
 
 export const Logo: React.FC<LogoProps> = ({
   className = '',
   showWordmark = true,
+  showSubtitle = false,
   size = 'md',
   textColor = 'text-[#102A56]',
 }) => {
-  const iconSize = size === 'sm' ? 'h-7 w-7' : size === 'lg' ? 'h-10 w-10' : 'h-8 w-8'
-  const textSize = size === 'sm' ? 'text-base' : size === 'lg' ? 'text-2xl' : 'text-lg'
+  const emblemSize = {
+    xs: 'h-6 w-auto max-w-[24px]',
+    sm: 'h-7 w-auto max-w-[28px]',
+    md: 'h-9 w-auto max-w-[36px]',
+    lg: 'h-11 w-auto max-w-[44px]',
+    xl: 'h-14 w-auto max-w-[56px]',
+  }[size]
+
+  const titleSize = {
+    xs: 'text-sm',
+    sm: 'text-base',
+    md: 'text-lg',
+    lg: 'text-2xl',
+    xl: 'text-3xl',
+  }[size]
+
+  const subtitleSize = {
+    xs: 'text-[7.5px]',
+    sm: 'text-[8.5px]',
+    md: 'text-[9.5px]',
+    lg: 'text-[11px]',
+    xl: 'text-[13px]',
+  }[size]
 
   return (
     <div className={`flex items-center gap-2.5 ${className}`}>
-      {/* Brand Monogram Mark */}
-      <div
-        className={`relative flex items-center justify-center rounded-lg bg-[#084d3c] p-1.5 shadow-xs text-white ${iconSize}`}
-      >
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="h-full w-full"
-        >
-          <path d="M4 4l8 16 8-16" stroke="#35D0C5" />
-          <path d="M8 8l4 8 4-8" stroke="#FFFFFF" />
-          <path d="M16 4l4 4-4 4" stroke="#00AFA9" strokeWidth="2" />
-        </svg>
-      </div>
+      {/* Official Ribbon & Arrow Growth Emblem */}
+      <img
+        src={logoEmblemImg}
+        alt="Versata Digital Solutions Logo Emblem"
+        className={`shrink-0 object-contain drop-shadow-xs transition-transform duration-300 hover:scale-105 ${emblemSize}`}
+      />
 
       {/* Brand Wordmark */}
       {showWordmark && (
-        <div className="flex flex-col">
+        <div className="flex flex-col text-left justify-center">
           <span
-            className={`font-extrabold tracking-wider uppercase leading-none transition-colors duration-300 ${textSize} ${textColor}`}
-            style={{ letterSpacing: '0.08em' }}
+            className={`font-black uppercase tracking-[0.14em] leading-none transition-colors duration-300 ${titleSize} ${textColor}`}
           >
             VERSATA
           </span>
+          {showSubtitle && (
+            <span
+              className={`mt-0.5 font-bold uppercase tracking-[0.24em] leading-none text-[#00AFA9] ${subtitleSize}`}
+            >
+              Digital Solutions
+            </span>
+          )}
         </div>
       )}
     </div>
   )
 }
+
+export default Logo

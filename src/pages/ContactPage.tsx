@@ -218,8 +218,8 @@ export const ContactPage: React.FC = () => {
                 <input id="contact-website" name="website" tabIndex={-1} autoComplete="off" value={values.website} onChange={(event) => updateValue('website', event.target.value)} />
               </div>
               {submitState === 'success' && (
-                <div role="status" className="rounded-md border border-[#00AFA9]/40 bg-[#00AFA9]/10 p-4 text-xs leading-relaxed text-[#084d3c] animate-in fade-in">
-                  <div className="flex items-center gap-2 font-bold text-sm text-[#084d3c]">
+                <div role="status" className="rounded-md border border-[#00AFA9]/40 bg-[#00AFA9]/10 p-4 text-xs leading-relaxed text-[#102A56] animate-in fade-in">
+                  <div className="flex items-center gap-2 font-bold text-sm text-[#00AFA9]">
                     <CheckCircle2 className="h-4 w-4 text-[#00AFA9]" />
                     <span>Enquiry Ready to Send!</span>
                   </div>
@@ -231,7 +231,7 @@ export const ContactPage: React.FC = () => {
                       href={lastSubmittedUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-3 inline-flex items-center gap-1.5 font-bold text-[#084d3c] hover:underline"
+                      className="mt-3 inline-flex items-center gap-1.5 font-bold text-[#00AFA9] hover:underline"
                     >
                       <MessageCircle className="h-3.5 w-3.5 text-[#00AFA9]" />
                       Click here if WhatsApp did not open automatically &rarr;
@@ -242,7 +242,7 @@ export const ContactPage: React.FC = () => {
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
                 <button
                   type="submit"
-                  className="group inline-flex min-h-11 items-center justify-center gap-2 rounded-sm bg-[#084d3c] px-6 py-3 text-xs font-bold text-white transition-all duration-200 hover:bg-[#063b2e] active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00AFA9] focus-visible:ring-offset-2"
+                  className="group inline-flex min-h-11 items-center justify-center gap-2 rounded-sm bg-[#00AFA9] px-6 py-3 text-xs font-bold text-white transition-all duration-200 hover:bg-[#008F8A] active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00AFA9] focus-visible:ring-offset-2"
                 >
                   <MessageCircle className="h-3.5 w-3.5" aria-hidden="true" />
                   Send via WhatsApp
@@ -288,7 +288,7 @@ export const ContactPage: React.FC = () => {
               <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#00AFA9]">For organisations</p>
               <h3 className="mt-4 text-2xl font-bold leading-tight tracking-[-0.03em] sm:text-3xl">Have a Technology or Project Requirement?</h3>
               <p className="mt-4 max-w-md text-sm leading-6 text-slate-600">Tell us about the technology, infrastructure or operational requirement your organisation is trying to address.</p>
-              <button type="button" onClick={() => startConversation('Technology Requirement')} className="group mt-7 inline-flex min-h-11 items-center gap-2 text-xs font-bold text-[#084d3c] transition-colors hover:text-[#00AFA9] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00AFA9] focus-visible:ring-offset-2">
+              <button type="button" onClick={() => startConversation('Technology Requirement')} className="group mt-7 inline-flex min-h-11 items-center gap-2 text-xs font-bold text-[#1557B0] transition-colors hover:text-[#00AFA9] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00AFA9] focus-visible:ring-offset-2">
                 Discuss Your Requirement <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1 group-focus-visible:translate-x-1" aria-hidden="true" />
               </button>
             </article>
@@ -297,7 +297,7 @@ export const ContactPage: React.FC = () => {
               <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#00AFA9]">For manufacturers</p>
               <h3 className="mt-4 text-2xl font-bold leading-tight tracking-[-0.03em] sm:text-3xl">Exploring Opportunities in Nigeria?</h3>
               <p className="mt-4 max-w-md text-sm leading-6 text-slate-600">Tell us about your company, technology and the market-development or partnership opportunity you would like to explore.</p>
-              <button type="button" onClick={() => startConversation('Technology Partnership')} className="group mt-7 inline-flex min-h-11 items-center gap-2 text-xs font-bold text-[#084d3c] transition-colors hover:text-[#00AFA9] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00AFA9] focus-visible:ring-offset-2">
+              <button type="button" onClick={() => startConversation('Technology Partnership')} className="group mt-7 inline-flex min-h-11 items-center gap-2 text-xs font-bold text-[#1557B0] transition-colors hover:text-[#00AFA9] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00AFA9] focus-visible:ring-offset-2">
                 Discuss a Partnership <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1 group-focus-visible:translate-x-1" aria-hidden="true" />
               </button>
             </article>

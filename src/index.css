@@ -3,11 +3,12 @@
 :root {
   color-scheme: light;
   --brand-teal: #00AFA9;
+  --brand-teal-hover: #008F8A;
   --brand-blue: #1557B0;
   --brand-deep-blue: #0B3D91;
   --brand-navy: #102A56;
+  --brand-midnight: #071525;
   --brand-cyan: #35D0C5;
-  --brand-forest: #084d3c;
   --bg-surface: #F4F5F2;
 }
 

@@ -191,8 +191,8 @@ export const Navbar: React.FC = () => {
             rel="noreferrer"
             className={`inline-flex items-center justify-center rounded-sm px-4 xl:px-5 py-2.5 text-xs font-semibold shadow-xs transition-all duration-200 active:scale-98 ${
               isTransparent
-                ? 'bg-[#084d3c] text-white border border-white/20 hover:bg-[#063b2e] hover:border-white/40 hover:shadow-md'
-                : 'bg-[#084d3c] text-white hover:bg-[#063b2e] hover:shadow-md'
+                ? 'bg-[#00AFA9] text-white border border-white/20 hover:bg-[#008F8A] hover:border-white/40 hover:shadow-md'
+                : 'bg-[#00AFA9] text-white hover:bg-[#008F8A] hover:shadow-md'
             }`}
           >
             <MessageCircle className="mr-2 h-3.5 w-3.5" aria-hidden="true" />

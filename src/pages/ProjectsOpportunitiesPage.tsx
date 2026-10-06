@@ -285,7 +285,7 @@ export const ProjectsOpportunitiesPage: React.FC = () => {
           <Link
             data-applications-cta
             to="/industries"
-            className="group mt-8 inline-flex min-h-11 items-center gap-2 rounded-sm bg-[#084d3c] px-5 py-3 text-xs font-bold text-white transition-all duration-200 hover:bg-[#063b2e] active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00AFA9] focus-visible:ring-offset-2"
+            className="group mt-8 inline-flex min-h-11 items-center gap-2 rounded-sm bg-[#00AFA9] px-5 py-3 text-xs font-bold text-white transition-all duration-200 hover:bg-[#008F8A] active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00AFA9] focus-visible:ring-offset-2"
           >
             Explore Industries
             <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true" />
@@ -351,7 +351,7 @@ export const ProjectsOpportunitiesPage: React.FC = () => {
               <Link
                 data-two-path-cta
                 to="/contact"
-                className="group mt-8 inline-flex min-h-11 items-center gap-2 rounded-sm bg-[#084d3c] px-5 py-3 text-xs font-bold text-white transition-all duration-200 hover:bg-[#063b2e] active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00AFA9] focus-visible:ring-offset-2"
+                className="group mt-8 inline-flex min-h-11 items-center gap-2 rounded-sm bg-[#00AFA9] px-5 py-3 text-xs font-bold text-white transition-all duration-200 hover:bg-[#008F8A] active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00AFA9] focus-visible:ring-offset-2"
               >
                 Discuss Your Requirement
                 <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1 group-focus-visible:translate-x-1" aria-hidden="true" />

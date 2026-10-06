@@ -34,7 +34,7 @@ const AppLayout: React.FC = () => {
       </a>
       <Navbar />
       <main id="main-content" tabIndex={-1} className="flex-1 outline-none">
-        <Suspense fallback={<div role="status" className="flex min-h-[50vh] items-center justify-center px-6 text-xs font-bold uppercase tracking-[0.18em] text-[#084d3c]">Loading page…</div>}>
+        <Suspense fallback={<div role="status" className="flex min-h-[50vh] items-center justify-center px-6 text-xs font-bold uppercase tracking-[0.18em] text-[#00AFA9]">Loading page…</div>}>
           <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />

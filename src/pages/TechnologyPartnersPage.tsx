@@ -685,7 +685,9 @@ export const TechnologyPartnersPage: React.FC = () => {
         </div>
       </section>
 
-      <section ref={hearFromRef} aria-labelledby="who-we-want-to-hear-from-heading" className="relative overflow-hidden bg-[#084d3c] text-white">
+      <section ref={hearFromRef} aria-labelledby="who-we-want-to-hear-from-heading" className="relative overflow-hidden bg-[#071525] text-white">
+        <div className="pointer-events-none absolute -top-40 -right-40 h-96 w-96 rounded-full bg-[#00AFA9]/10 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-[#1557B0]/15 blur-3xl" />
         <div aria-hidden="true" className="pointer-events-none absolute -right-5 top-8 hidden text-[11rem] font-bold uppercase leading-none tracking-[-0.1em] text-white/[0.035] lg:block">Partner</div>
         <div className="relative mx-auto max-w-7xl px-6 py-16 sm:px-10 sm:py-20 lg:px-12 lg:py-24">
           <div className="grid gap-8 lg:grid-cols-12 lg:items-end lg:gap-12">

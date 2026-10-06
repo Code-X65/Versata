@@ -93,7 +93,7 @@ export const Hero: React.FC = () => {
                       href={whatsappUrl('Hello Versata, I would like to discuss a technology requirement or project opportunity.')}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center justify-center rounded-xs bg-[#084d3c] px-5 py-2.5 text-xs font-semibold text-white shadow-sm transition-all duration-200 hover:bg-[#063b2e] hover:shadow-md active:scale-98"
+                      className="inline-flex items-center justify-center rounded-xs bg-[#00AFA9] px-5 py-2.5 text-xs font-semibold text-white shadow-sm transition-all duration-200 hover:bg-[#008F8A] hover:shadow-md active:scale-98"
                     >
                       <MessageCircle className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
                       Chat on WhatsApp

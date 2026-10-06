@@ -545,7 +545,7 @@ export const IndustriesPage: React.FC = () => {
                 alt="Commercial solar energy grid and smart power monitoring infrastructure"
                 className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#084d3c]/85 via-[#084d3c]/20 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#071525]/85 via-[#071525]/20 to-transparent pointer-events-none" />
               <div className="absolute bottom-6 left-6 right-6 text-white">
                 <span className="inline-block rounded-full bg-[#00AFA9]/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-sm shadow-sm">
                   Energy infrastructure
@@ -893,7 +893,7 @@ export const IndustriesPage: React.FC = () => {
           <Link
             data-cross-solutions-cta
             to="/solutions"
-            className="group mt-8 inline-flex min-h-11 items-center gap-2 rounded-sm bg-[#084d3c] px-5 py-3 text-xs font-bold text-white transition-all duration-200 hover:bg-[#063b2e] active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00AFA9] focus-visible:ring-offset-2"
+            className="group mt-8 inline-flex min-h-11 items-center gap-2 rounded-sm bg-[#00AFA9] px-5 py-3 text-xs font-bold text-white transition-all duration-200 hover:bg-[#008F8A] active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00AFA9] focus-visible:ring-offset-2"
           >
             Explore Our Solutions
             <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true" />
