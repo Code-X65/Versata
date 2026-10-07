@@ -116,6 +116,7 @@ export const IconsPage: React.FC = () => {
       <SEO
         title="Lucide Icons Explorer | Versata"
         description="Search and explore thousands of clean, customizable Lucide React icons."
+        noindex
       />
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto">

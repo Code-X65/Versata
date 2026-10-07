@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet-async'
 import { useLocation } from 'react-router-dom'
 
-const SITE_URL = 'https://versatadigitalsolutions.com'
+const SITE_URL = 'https://versata.online'
 const DEFAULT_TITLE = 'Versata Digital Solutions | Technology Opportunities in Nigeria'
 const DEFAULT_DESCRIPTION =
   'Versata connects innovative technology with practical opportunities across Nigeria in Smart Energy, Digital Infrastructure, Smart Education, and Technology Partnerships.'

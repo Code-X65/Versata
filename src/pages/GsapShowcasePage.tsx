@@ -96,6 +96,7 @@ export const GsapShowcasePage: React.FC = () => {
       <SEO
         title="GSAP Playground | Versata"
         description="Interactive motion lab featuring timeline controls, spring physics, and stagger animations."
+        noindex
       />
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto">

@@ -28,6 +28,7 @@ export const NotFoundPage: React.FC = () => {
       <SEO
         title="404 - Page Not Found | Versata Digital Solutions"
         description="The requested page could not be found on Versata Digital Solutions."
+        noindex
       />
 
       {/* Subtle Background Watermark */}
