@@ -64,7 +64,10 @@ export const PartnershipsPage: React.FC = () => {
   }, { scope: pageRef })
 
   return <div ref={pageRef} className="bg-[#F4F5F2] text-[#102A56]">
-    <SEO title="Partnerships | Versata Digital Solutions" description="Versata develops practical, phased market-development relationships with selected international technology manufacturers for Nigerian opportunities." />
+    <SEO
+      title="International Technology Partnerships | Versata Nigeria"
+      description="Partner with Versata to introduce proven global hardware and software products to Nigerian commercial, institutional, and industrial markets."
+    />
 
     <PageHero
       title="Building Technology Partnerships for the Nigerian Market"

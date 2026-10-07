@@ -372,8 +372,8 @@ export const IndustriesPage: React.FC = () => {
   return (
     <div className="bg-[#F4F5F2] text-[#102A56]">
       <SEO
-        title="Industries | Versata Digital Solutions"
-        description="Explore the sectors where innovative technology can create practical value with Versata Digital Solutions."
+        title="Industry Solutions & Sectors | Versata Digital Solutions"
+        description="Discover innovative technology solutions across energy, commercial enterprises, healthcare, education, agriculture, and public infrastructure in Nigeria."
       />
 
       <PageHero

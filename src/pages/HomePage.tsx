@@ -457,8 +457,8 @@ export const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#F4F5F2] text-[#102A56]">
       <SEO
-        title="Versata Digital Solutions | Technology Integration & Market Development"
-        description="Versata connects international technology with practical energy, infrastructure, industrial and institutional opportunities in Nigeria and West Africa."
+        title="Versata Digital Solutions | Technology & Energy Nigeria"
+        description="Versata connects innovative global technology with energy, digital infrastructure, industrial, and institutional opportunities across Nigeria and West Africa."
       />
 
       {/* Main Hero Component */}

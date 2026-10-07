@@ -169,8 +169,8 @@ export const ProjectsOpportunitiesPage: React.FC = () => {
   return (
     <div className="bg-[#F4F5F2] text-[#102A56]">
       <SEO
-        title="Projects & Opportunities | Versata Digital Solutions"
-        description="Versata develops technology opportunities around real customer, institutional and project requirements within the Nigerian market."
+        title="Projects & Market Opportunities | Versata Digital Solutions"
+        description="Browse active technology opportunities, turnkey installations, and feasibility initiatives developed around real customer requirements in Nigeria."
       />
 
       <PageHero

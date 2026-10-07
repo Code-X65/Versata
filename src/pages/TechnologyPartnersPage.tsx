@@ -404,8 +404,8 @@ export const TechnologyPartnersPage: React.FC = () => {
   return (
     <div className="bg-[#F4F5F2] text-[#102A56]">
       <SEO
-        title="Technology Partners | Versata Digital Solutions"
-        description="Versata explores practical pathways for selected international technology companies seeking opportunities within the Nigerian market."
+        title="Technology Partners & OEM Integration | Versata Nigeria"
+        description="Versata creates market entry and deployment pathways for international technology manufacturers and OEMs seeking high-growth opportunities in Nigeria."
       />
 
       <PageHero

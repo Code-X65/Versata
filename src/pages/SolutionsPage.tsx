@@ -61,7 +61,10 @@ export const SolutionsPage: React.FC = () => {
   }, { scope: infrastructureRef })
 
   return <div className="bg-[#F4F5F2] text-[#102A56]">
-    <SEO title="Solutions | Versata Digital Solutions" description="Practical technology solutions across energy, digital infrastructure, education and workplace environments." />
+    <SEO
+      title="Smart Energy & Tech Solutions | Versata Digital Solutions"
+      description="Explore practical technology solutions across solar microgrids, smart energy, digital infrastructure, education tech, and modern systems in Nigeria."
+    />
     
     <PageHero
       title="Technology Solutions Built Around Real-World Needs"

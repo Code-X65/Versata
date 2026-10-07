@@ -275,8 +275,8 @@ export const AboutPage: React.FC = () => {
   return (
     <div className="bg-[#F4F5F2] text-[#102A56]">
       <SEO
-        title="About Versata | Versata Digital Solutions"
-        description="Learn about Versata Digital Solutions, a Nigerian technology solutions and market-development company based in Lagos."
+        title="About Versata | Technology & Market Development Lagos"
+        description="Learn about Versata Digital Solutions, a Lagos-based technology solutions and market-development firm delivering practical innovation across Nigerian sectors."
       />
 
       {/* Redesigned Hero matching Homepage layout */}

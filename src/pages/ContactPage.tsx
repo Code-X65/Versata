@@ -160,8 +160,8 @@ export const ContactPage: React.FC = () => {
   return (
     <div className="bg-[#F4F5F2] text-[#102A56]">
       <SEO
-        title="Contact | Versata Digital Solutions"
-        description="Contact Versata Digital Solutions to discuss technology requirements, project opportunities, or technology partnerships in Nigeria."
+        title="Contact Versata | Technology Enquiries & Support Lagos"
+        description="Get in touch with Versata Digital Solutions in Lagos, Nigeria. Discuss technology procurement, project scoping, or manufacturer partnerships."
       />
 
       <PageHero
